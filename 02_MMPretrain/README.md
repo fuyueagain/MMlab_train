@@ -1,10 +1,13 @@
 # MMPretrain 微调task
 文档说明：
-- 数据集分割code：
-- 模型参数设置myconfig：
-- train日志：
-- test日志：
-- 结果图片：
+- 模型参数设置myconfig：[resnet50_fruit30.py](https://github.com/fuyueagain/MMlab_train/blob/main/02_MMPretrain/resnet50_fruit30.py)
+- train训练日志：[20230608_092805.log](https://github.com/fuyueagain/MMlab_train/blob/main/02_MMPretrain/20230608_092805.log)
+- test训练日志：[20230608_093427.log](https://github.com/fuyueagain/MMlab_train/blob/main/02_MMPretrain/20230608_093427.log)
+![test](https://github.com/fuyueagain/MMlab_train/blob/main/02_MMPretrain/test_res.jpg)
+- 结果图片：预测的效果不错👍
+![xigua](https://github.com/fuyueagain/MMlab_train/blob/main/02_MMPretrain/xigua_res.jpg)
+![youzi1](https://github.com/fuyueagain/MMlab_train/blob/main/02_MMPretrain/youzi_red.png)
+![youzi2](https://github.com/fuyueagain/MMlab_train/blob/main/02_MMPretrain/youzi_res.jpg)
 
 ## 1. 加载数据分割数据集
 ``` shell
