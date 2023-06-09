@@ -162,3 +162,28 @@ from matplotlib.font_manager import FontProperties
 
 font = FontProperties(fname="/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc", size=12)
 ```
+
+
+其他方法 [参考](https://sujingjhong.com/posts/how-to-show-matplotlib-visual-packages-in-chinese-on-colab/)
+```python
+# Show Chinese in matplotlib
+
+# Show Chinese
+!wget 'https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJKtc-hinted.zip'
+!mkdir /tmp/fonts
+!unzip -o NotoSansCJKtc-hinted.zip -d /tmp/fonts/
+!mv /tmp/fonts/NotoSansMonoCJKtc-Regular.otf /usr/share/fonts/truetype/NotoSansMonoCJKtc-Regular.otf -f
+!rm -rf /tmp/fonts
+!rm NotoSansCJKtc-hinted.zip
+# 指定字體
+import matplotlib.font_manager as font_manager
+import matplotlib.pyplot as plt
+
+font_dirs = ['/usr/share/fonts/truetype/']
+font_files = font_manager.findSystemFonts(fontpaths=font_dirs)
+
+for font_file in font_files:
+  font_manager.fontManager.addfont(font_file)
+
+plt.rcParams['font.family'] = "Noto Sans Mono CJK TC"
+```
