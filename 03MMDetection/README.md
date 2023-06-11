@@ -1,4 +1,4 @@
-# mmdetection作业
+# 03_ballon_mmdetection作业
 
 说明：
 - train日志：[20230610_214713.log](https://github.com/fuyueagain/MMlab_train/blob/main/03MMDetection/20230610_214713.log)
